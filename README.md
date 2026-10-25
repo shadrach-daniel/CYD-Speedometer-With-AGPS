@@ -135,9 +135,11 @@ Remove or comment out the 9600 phase and leave `GPS_BAUD` at 9600, then re-tune 
        |  GPIO 22  ---+------------------------+ RX       |
        |  GND      ---+------------------------+ GND      |
        |  3V3 / 5V ---+------------------------+ VCC      |
-       +--------------+                        |          |
+       +--------------+
+
+                                               |          |
                                                |  pin 15 -+--[ 10k ohm ]-- GND
-                                               |(CFG COM1)|   <- baud-select
+                                               |(CFG COM1)|   <- baud-select Directly on the main chip
                                                +----------+
 ```
 
